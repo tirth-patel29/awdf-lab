@@ -1,302 +1,62 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fb;
-  color: #1f2937;
-}
-
-/* =========================
-   APP
-========================= */
-
-.app {
-  min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 45px;
-  background: #111827;
-  color: white;
-}
-
-nav h2 {
-  margin: 0;
-  font-size: 22px;
-}
-
-nav div {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-nav a:hover {
-  color: #60a5fa;
-}
-
-nav button {
-  margin: 0;
-  padding: 8px 14px;
-  border-radius: 8px;
-  background: #374151;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-nav button:hover {
-  background: #4b5563;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-header h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 18px;
-  color: #d1d5db;
-}
-
-/* =========================
-   MAIN
-========================= */
-
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-/* =========================
-   SECTIONS
-========================= */
-
-section {
-  background: white;
-  padding: 30px;
-  margin-bottom: 25px;
-  border-radius: 16px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-section h2 {
-  margin-bottom: 15px;
-  font-size: 26px;
-}
-
-section p {
-  line-height: 1.7;
-}
-
-/* =========================
-   SKILLS
-========================= */
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-li {
-  background: #111827;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 20px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  color: #6b7280;
-  border-top: 1px solid #e5e7eb;
-}
-
-footer p {
-  margin: 5px;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-
-button {
-  background: #111827;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #374151;
-}
-
-/* =========================
-   CONTACT FORM
-========================= */
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  resize: vertical;
-  font-family: inherit;
-  font-size: 15px;
-}
-
-textarea:focus {
-  outline: none;
-  border-color: #111827;
-}
-
-/* =========================
-   PROJECTS
-========================= */
-
-.project-list {
-  display: grid;
-  gap: 20px;
-}
-
-.project-card {
-  background: white;
-  padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.project-card h2 {
-  margin-bottom: 10px;
-}
-
-/* =========================
-   DARK MODE
-========================= */
-
-.app.dark {
-  background: #111827;
-  color: #f9fafb;
-}
-
-.app.dark main {
-  background: #111827;
-}
-
-.app.dark section {
-  background: #1f2937;
-  color: #f9fafb;
-}
-
-.app.dark section p {
-  color: #d1d5db;
-}
-
-.app.dark footer {
-  color: #9ca3af;
-  border-top-color: #374151;
-}
-
-.app.dark nav {
-  background: #030712;
-}
-
-.app.dark header {
-  background: #030712;
-}
-
-.app.dark textarea {
-  background: #374151;
-  color: white;
-  border-color: #4b5563;
-}
-
-.app.dark textarea::placeholder {
-  color: #d1d5db;
-}
-
-.app.dark .project-card {
-  background: #1f2937;
-  color: #f9fafb;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-  nav {
-    padding: 15px 20px;
-  }
-
-  nav h2 {
-    font-size: 18px;
-  }
-
-  nav div {
-    gap: 12px;
-  }
-
-  nav a {
-    font-size: 14px;
-  }
-
-  nav button {
-    padding: 7px 10px;
-    font-size: 13px;
-  }
-
-  header h1 {
-    font-size: 32px;
-  }
-
-  main {
-    margin: 25px auto;
-  }
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100%; }
+body { font-family: Arial, sans-serif; background: #f5f7fb; color: #172033; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; }
+.app { min-height: 100vh; background: #f5f7fb; color: #172033; transition: .25s ease; }
+nav { min-height: 66px; padding: 0 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #111827; color: #fff; }
+.brand { font-size: 21px; font-weight: 700; text-decoration: none; }
+.nav-links { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: flex-end; }
+.nav-links a { text-decoration: none; font-size: 14px; }
+.nav-links a:hover { color: #60a5fa; }
+nav button, button { border: 0; border-radius: 8px; padding: 9px 14px; background: #111827; color: #fff; cursor: pointer; }
+nav button { background: #374151; }
+button:hover { opacity: .9; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+main { width: min(900px, calc(100% - 32px)); margin: 40px auto; }
+section { background: #fff; padding: 28px; margin-bottom: 24px; border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
+section h1 { margin-top: 0; font-size: 32px; }
+section h2 { margin-top: 0; }
+header { background: #111827; color: #fff; text-align: center; padding: 60px 20px; }
+header h1 { font-size: 42px; margin: 0 0 10px; }
+header p { color: #d1d5db; }
+footer { text-align: center; padding: 30px 20px; color: #6b7280; border-top: 1px solid #e5e7eb; }
+.project-list, .task-list { display: grid; gap: 16px; }
+.project-card, .task-card { background: #fff; padding: 20px; border-radius: 14px; box-shadow: 0 5px 20px rgba(0,0,0,.08); }
+.task-card { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+.task-card h3 { margin: 8px 0; }
+.task-card p { margin: 7px 0; line-height: 1.5; }
+.task-form, .auth-form { display: grid; gap: 10px; margin-top: 20px; }
+label { font-weight: 600; }
+input, textarea, select { width: 100%; padding: 11px 12px; border: 1px solid #d1d5db; border-radius: 8px; background: #fff; color: #172033; }
+textarea { resize: vertical; }
+.form-row { display: flex; gap: 20px; align-items: end; }
+.form-row > label { flex: 1; }
+.checkbox-label { display: flex; gap: 8px; align-items: center; }
+.checkbox-label input { width: auto; }
+.button-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.secondary-button { background: #6b7280; }
+.danger-button { background: #b91c1c; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.search-input { max-width: 260px; }
+.priority { display: inline-block; padding: 4px 9px; border-radius: 999px; font-size: 12px; text-transform: capitalize; background: #e5e7eb; }
+.priority-high { background: #fee2e2; color: #991b1b; }
+.priority-medium { background: #fef3c7; color: #92400e; }
+.priority-low { background: #dcfce7; color: #166534; }
+.completed { color: #15803d; font-weight: 600; }
+.pending { color: #b45309; font-weight: 600; }
+.error-message { color: #b91c1c; font-weight: 600; }
+.success-message { color: #15803d; font-weight: 600; }
+.auth-card { max-width: 520px; margin: 50px auto; }
+.user-email { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: #cbd5e1; }
+.app.dark { background: #0b1220; color: #f8fafc; }
+.app.dark section, .app.dark .project-card, .app.dark .task-card { background: #172033; color: #f8fafc; }
+.app.dark input, .app.dark textarea, .app.dark select { background: #0f172a; color: #f8fafc; border-color: #475569; }
+.app.dark footer { border-color: #334155; color: #94a3b8; }
+.app.dark .project-card, .app.dark .task-card { box-shadow: 0 6px 24px rgba(0,0,0,.25); }
+@media (max-width: 700px) {
+  nav { padding: 12px 16px; align-items: flex-start; }
+  .nav-links { gap: 10px; }
+  .task-card, .form-row, .section-heading { flex-direction: column; align-items: stretch; }
+  .search-input { max-width: none; }
 }
